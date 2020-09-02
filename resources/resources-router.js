@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
 })
 
 function handleError(error, res) {
-    return res.status(500).json({ error: error })
+    return res.status(500).json({ error: error.message })
 }
 
 module.exports = router;
